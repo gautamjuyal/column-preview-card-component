@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(0, 0%, 95%);
+}
+
+.preview-card {
+    display: flex;
+    width: 900px;
+    color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 70px 50px 50px;
+    gap: 2rem;
+}
+
+.text {
+    font-family: 'Lexend Deca', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.text h1 {
+    font-family: 'Big Shoulders Display', sans-serif;
+    color: hsl(0, 0%, 95%);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.text p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.learn-more-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: hsl(0, 0%, 95%);
+    border: 3px solid hsl(0, 0%, 95%);
+    width: 75%;
+    height: 3rem;
+    border-radius: 30px;
+    color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+}
+
+.learn-more-btn:hover {
+    background: inherit;
+}
+
+.learn-more-btn:hover a {
+    color: hsl(0, 0%, 95%);
+}
+
+
+/* .learn-more-btn::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    z-index: 2;
+} */
+
+.learn-more-btn a {
+    text-decoration: none;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.bg1 {
+    background-color: hsl(31, 77%, 52%);
+}
+
+.bg2 {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.bg3 {
+    background-color: hsl(179, 100%, 13%);
+}
+
+.color1 a {
+    color: hsl(31, 77%, 52%)
+}
+
+.color2 a {
+    color: hsl(184, 100%, 22%)
+}
+
+.color3 a {
+    color: hsl(179, 100%, 13%)
+}
+
+@media (max-width:500px) {
+    .container {
+        height: fit-content;
+    }
+    .preview-card {
+        width: 90%;
+        flex-direction: column;
+    }
+    .learn-more-btn {
+        width: 50%;
+    }
+    .text {
+        margin-bottom: 1rem;
+    }
+}
